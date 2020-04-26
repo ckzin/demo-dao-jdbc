@@ -19,6 +19,11 @@ public class Program2 {
 		dep = departmentDao.findById(3);
 		System.out.println(dep);
 		
+		System.out.println("\n=== TEST 3: department update ===");
+		dep = departmentDao.findById(7);
+		dep.setName("Photoshop");
+		departmentDao.update(dep);
+		System.out.println("Update Completed");
 	}
 
 }
